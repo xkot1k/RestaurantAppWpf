@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style BasedOn="{StaticResource {x:Type CheckBox}}"
+           TargetType="{x:Type CheckBox}"
+           x:Key="CheckBoxStyle">
+        <Setter Property="FontFamily" Value="Comic Sans"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Margin" Value="12 8 200 0"/>
+        <Setter Property="Background" Value="Orange"/>
+    </Style>
+</ResourceDictionary>
