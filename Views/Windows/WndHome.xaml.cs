@@ -31,7 +31,10 @@ namespace RestaurantApp.Views.Windows
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Извините, функция в разработке в данный момент!");
+            Views.Windows.WndAutorization wndAutorization = new WndAutorization();
+            this.Close();
+            MessageBox.Show("Возвращайтесь скорее!");
+            wndAutorization.Show();   
         }
 
         private void btnSubmit_Click(object sender, RoutedEventArgs e)

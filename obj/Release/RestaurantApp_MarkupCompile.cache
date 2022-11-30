@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-F:\C#\GitHubProjects\RestaurantWPF\obj\Debug\
+F:\C#\GitHubProjects\RestaurantWPF\obj\Release\
 RestaurantApp
 none
 false
-DEBUG;TRACE
+TRACE
 F:\C#\GitHubProjects\RestaurantWPF\App.xaml
 7778415424
 
@@ -16,5 +16,5 @@ F:\C#\GitHubProjects\RestaurantWPF\App.xaml
 13-1505183044
 Resources\Styles\ButtonStyle.xaml;Resources\Styles\CheckBoxStyle.xaml;Resources\Styles\LabelStyle.xaml;Resources\Styles\RadioButtonStyle.xaml;Resources\Styles\TextBoxStyle.xaml;Views\Windows\WndAutorization.xaml;Views\Windows\WndHome.xaml;
 
-False
+True
 

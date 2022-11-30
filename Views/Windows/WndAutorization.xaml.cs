@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace RestaurantApp
+namespace RestaurantApp.Views.Windows
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class WndAutorization : Window
     {
-        public MainWindow()
+        public WndAutorization()
         {
             InitializeComponent();
         }
@@ -40,12 +40,28 @@ namespace RestaurantApp
             if (txtLogin.Text == "admin" && (psbPassword.Password == "admin" || txtPassword.Text == "admin"))
             {
                 Views.Windows.WndHome wndHome = new Views.Windows.WndHome();
-                wndHome.Show();
                 this.Close();
+                MessageBox.Show($"Здравствуйте, {txtLogin.Text}! \nПеред Вами открывается главное окно приложения. \n" +
+                    $"Заказывайте с удовольствием, с нами вкусно и легко!");
+                wndHome.Show();
+
             }
-            else
+            else if (txtLogin.Text == "admin")
             {
-                MessageBox.Show(psbPassword.Password);
+                if (psbPassword.Password != "admin" || txtPassword.Text != "admin")
+                {
+                    MessageBox.Show("Неверно заполнено поле пароля!");
+                }
+                else if (psbPassword.Password == "" || txtPassword.Text == ""
+                                    || psbPassword.Password is null || txtPassword.Text is null)
+                {
+                    MessageBox.Show("Не заполнено поле пароля!");
+                }
+
+            }
+            else 
+            {
+                MessageBox.Show("Неверно заполнено поле логина!");
             }
         }
 
